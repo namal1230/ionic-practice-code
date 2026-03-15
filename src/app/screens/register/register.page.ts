@@ -8,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterPage implements OnInit {
 
+  email!:string;
+  fullName!:string;
+  password!:string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cretate(){
+    if(this.email && this.password && this.fullName){
+
+    }else{
+      alert('Please fill all the fields');
+    }
+
   }
 
 }
